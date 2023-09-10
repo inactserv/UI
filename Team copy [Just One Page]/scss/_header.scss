@@ -1,0 +1,116 @@
+@import "config";
+
+.nav {
+    display: flex;
+    margin: 24px 80px;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    width: max-width;
+
+    .logo {
+        width: 91px;
+        height: 39px;
+        float: left;
+        font-size: $text-font-size + 12px;
+        font-weight: 700;
+        margin-right: 24px;
+
+        .Int {
+            color:$text-color;
+        }
+        .Act {
+            color:$primary-color;
+        }
+    }
+
+    .search {
+        float: left;
+        width: 300px;
+        height: 44px;
+        border-radius: 30px;
+        border: solid 1px;
+
+        input {
+            margin: 8px 16px;
+            border: none;
+            height: 28px;
+
+        &::placeholder {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            color: $text-color;
+        }
+    }
+    }
+
+    .nav-bar {
+        flex-basis: 50%;
+        width: 370px;
+        height: 44px;
+        margin-right: 40px;
+
+        ul {
+
+            li {
+                float: right;
+                list-style: none;
+                padding: 8px 12px;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    background: $text-color;
+                    display: block;
+                    margin: auto;
+                    transition: 0.3s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: 18px;
+
+                    .active {
+                    :active {
+                        width: 100%;
+                        height: 2px;
+                        background: #031332;
+                        display: block;
+                        margin: auto;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        width: 132px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 5px;
+
+        a {
+            text-decoration: none;
+            color: $bg-color;
+            background-color: $primary-color;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            text-transform: uppercase;
+            padding: 8px 24px;
+            border-radius: 8px;
+        }
+    }
+}
