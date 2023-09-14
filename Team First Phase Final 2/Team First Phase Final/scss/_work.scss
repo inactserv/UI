@@ -1,0 +1,55 @@
+@import 'config';
+
+.work-container{
+    width: 1120px;
+    margin: auto;
+    
+    .allwork{
+        width: 1120px;
+
+        .work-item{
+            margin-top: 40px;
+            width: 100%;
+            display: inline-flex;
+            gap: 16px;
+            margin-bottom: 32px;
+
+            .work-img{
+                width: 552px;
+                height: 391px;
+
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                }
+
+                img{
+                    width: 552px;
+                    height: 300px;
+                    border-radius: 16px;
+                    object-fit:cover;
+                }
+
+                h3{
+                    color: $text-color;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-top: 16px;
+                    margin-bottom: 8px;
+                }
+    
+                p{
+                    color: $text-color;
+                    font-family: $secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,73 @@
+@import 'config';
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+.work-details {
+    height: 100%;
+    padding: 4rem 5rem;
+    overflow: auto;
+    align-items: center;
+}
+
+.custom-flex {
+    display: flex;
+    flex-flow: row;
+    padding-bottom: 3px;
+}
+
+.full-photo {
+    border-radius: 10px;
+    width: 100%;
+    margin: 3px;
+}
+
+.half-photo {
+    border-radius: 10px;
+    width: 50%;
+    margin: 3px;
+    padding: 3px;
+}
+
+.p5-info {
+    display: flex;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &__title {
+        font-size: $h3-font-size;
+        font-weight: $font-weight-bold;
+        width: 30%;
+    }
+
+    &__detail {
+        font-size: $font-size-base;
+        font-weight: $font-weight-normal;
+        width: 70%;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.pa-3px {
+    padding: 3px;
+}
+
+.related-item {
+    padding: 5px;
+    width: 50%;
+}
